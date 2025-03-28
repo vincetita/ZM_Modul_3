@@ -1,3 +1,5 @@
+####ast
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 import random
@@ -5,24 +7,54 @@ import random
 # Quizfragen und Antworten
 quiz_fragen = [
     {
-        "frage": "Was bewirkt wrap='none' in einem Tkinter Text-Widget?",
-        "optionen": ["A) Aktiviert automatische Zeilenumbrüche", "B) Deaktiviert automatische Zeilenumbrüche", "C) Ermöglicht Umbruch bei Leerzeichen", "D) Schneidet Text am Rand ab"],
+        "frage": "Was ist der Unterschied zwischen '==' und 'is' in Python?",
+        "optionen": [
+            "A) '==' vergleicht Werte, 'is' vergleicht Objekt-Identität",
+            "B) 'is' vergleicht Werte, '==' vergleicht Objekt-Identität",
+            "C) Beide sind identisch",
+            "D) 'is' existiert nicht in Python"
+        ],
+        "antwort": "A"
+    },
+    {
+        "frage": "Was gibt [x**2 for x in range(5)] zurück?",
+        "optionen": [
+            "A) [0, 1, 4, 9, 16]",
+            "B) [1, 4, 9, 16, 25]",
+            "C) [0, 1, 2, 3, 4]",
+            "D) Fehler"
+        ],
+        "antwort": "A"
+    },
+    {
+        "frage": "Wie funktioniert die Methode .get() bei Dictionaries?",
+        "optionen": [
+            "A) Gibt den Wert für einen Schlüssel zurück oder None",
+            "B) Löscht einen Schlüssel",
+            "C) Fügt einen neuen Schlüssel hinzu",
+            "D) Konvertiert das Dictionary zu einer Liste"
+        ],
+        "antwort": "A"
+    },
+    {
+        "frage": "Was ist der Output von bool([])?",
+        "optionen": [
+            "A) True",
+            "B) False",
+            "C) None",
+            "D) Error"
+        ],
         "antwort": "B"
     },
     {
-        "frage": "Welches Modul wird für QR-Codes in Python verwendet?",
-        "optionen": ["A) qrtools", "B) qrcode", "C) pyqrcode", "D) barcode"],
-        "antwort": "C"
-    },
-    {
-        "frage": "Welche Funktion speichert ein QR-Code als PNG?",
-        "optionen": ["A) qr.save()", "B) qr.generate()", "C) qr.png()", "D) qr.export()"],
-        "antwort": "C"
-    },
-    {
-        "frage": "Welches Widget wird für Scrollbars in Tkinter verwendet?",
-        "optionen": ["A) ScrollFrame", "B) ttk.Scroll", "C) tk.Scrollbar", "D) tk.Scroll"],
-        "antwort": "C"
+        "frage": "Welche Aussage über Lambda-Funktionen ist korrekt?",
+        "optionen": [
+            "A) Können nur einen Parameter haben",
+            "B) Müssen immer einen Namen haben",
+            "C) Können mehrere Ausdrücke enthalten",
+            "D) Sind auf einen Ausdruck beschränkt"
+        ],
+        "antwort": "D"
     }
 ]
 
